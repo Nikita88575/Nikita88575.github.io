@@ -1,0 +1,132 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #000;
+  }
+
+  .profile-background-photo, .profile-header {
+    position: relative;
+  }
+
+  .profile-background {
+    text-align: center;
+  }
+
+  .profile-background-photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .profile-header {
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
+    background-color: #2e1f46;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .profile-picture {
+    margin-top: -65px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-info {
+    padding: 20px 0;
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
+    background-color: #2e1f46;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .profile-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .experience-section {
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
+    background-color: #2e1f46;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .experience-section h3 {
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .experience-section ul {
+    margin-left: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .experience-item {
+    margin-bottom: 20px;
+    border-left: 2px solid #007bff;
+    padding-left: 10px;
+  }
+
+  .experience-item .item-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .experience-item .item-subtitle {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  .experience-item .item-description {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .nw__box {
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
+    background-color: #2e1f46;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .nw__box-header {
+    padding: 9px 20px 0;
+    height: 52px;
+    color: #ffffff;
+    font-size: 0;
+    text-align: justify;
+  }
+
+  .nw___box-header-title {
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 34px;
+  }
+
+  .full-statistic {
+    padding: 30px 40px 0 40px;
+    border-top: solid 1px #f3f3f3;
+    color: #ffffff;
+  }
+
+  .table {
+    color: #ffffff;
+  }
