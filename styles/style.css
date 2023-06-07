@@ -1,7 +1,18 @@
 body {
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    top: 0;
     background: #000;
+    font-family: Arial, sans-serif;
+  }
+
+  .global-nav {
+    width: 100%;
+    opacity: 70%;
+    display: flex;
+    margin: 0 auto;
+    min-height: 4.8rem;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #2e1f46;
   }
 
   .profile-background-photo, .profile-header {
@@ -15,51 +26,58 @@ body {
   .profile-background-photo {
     width: 100%;
     height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
 
   .profile-header {
-    text-align: center;
     padding: 20px 0;
-    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
-    background-color: #2e1f46;
     color: #ffffff;
+    text-align: center;
     margin-bottom: 10px;
+    background-color: #2e1f46;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
   }
 
   .profile-picture {
-    margin-top: -65px;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     object-fit: cover;
+    margin-top: -65px;
+    margin-left: 50px;
+    border-radius: 50%;
   }
 
   .profile-info {
     padding: 20px 0;
-    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
-    background-color: #2e1f46;
     color: #ffffff;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: #2e1f46;
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
+    border-radius: 30px;
   }
 
   .profile-info h1 {
     font-size: 24px;
-    margin-bottom: 10px;
     margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .profile-info p {
     font-size: 16px;
-    margin-bottom: 10px;
     margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .experience-section {
-    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
-    background-color: #2e1f46;
     color: #ffffff;
     margin-bottom: 20px;
+    background-color: #2e1f46;
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
+    border-radius: 30px;
   }
 
   .experience-section h3 {
@@ -71,15 +89,15 @@ body {
   }
 
   .experience-section ul {
+    padding: 0;
     margin-left: 20px;
     list-style-type: none;
-    padding: 0;
   }
 
   .experience-item {
+    padding-left: 10px;
     margin-bottom: 20px;
     border-left: 2px solid #007bff;
-    padding-left: 10px;
   }
 
   .experience-item .item-title {
@@ -99,32 +117,33 @@ body {
   }
 
   .nw__box {
-    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
-    background-color: #2e1f46;
     color: #ffffff;
     margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: #2e1f46;
+    box-shadow: 0 2px 5px 0 rgba(9, 9, 9, 0.05);
   }
   
   .nw__box-header {
-    padding: 9px 20px 0;
     height: 52px;
-    color: #ffffff;
     font-size: 0;
+    color: #ffffff;
+    padding: 9px 20px 0;
     text-align: justify;
   }
 
   .nw___box-header-title {
     font-size: 16px;
     color: #ffffff;
+    line-height: 34px;
     display: inline-block;
     vertical-align: middle;
-    line-height: 34px;
   }
 
   .full-statistic {
+    color: #ffffff;
     padding: 30px 40px 0 40px;
     border-top: solid 1px #f3f3f3;
-    color: #ffffff;
   }
 
   .table {
