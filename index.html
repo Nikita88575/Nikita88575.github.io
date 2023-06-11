@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    
     <title>Мій профіль</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
-
 </head>
-
 <body>
     <div class="global-nav">
-
+        <div class="headerContainer">
+            <div class="headerSearchWrapper">
+                <div class="search-box">
+                    <input id="searchInput" class="search-text" type="text" placeholder="Search">
+                    <a class="search-btn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>svg{fill:#613583}</style>
+                            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img class="logo" src="logotypes/logo.png">
+            </div>
+        </div>
     </div>
-    
     <div class="container">
         <div class="profile-background">
             <img class="profile-background-photo" src="photos/butterfly.png" alt="Задній план">
         </div>
-
         <div class="profile-header">
-            
             <img class="profile-picture" src="photos/test.jpg" alt="Ваше фото">
-
             <h1 class="username">
                 <a href="https://github.com/Nikita88575" style="color: #ffffff;">
                     Нікіта Вовк
                 </a>
             </h1>
-
             <p>
                 Студент(ка) в уч. закладі
                 <a href="https://omc.univ.kiev.ua/" style="color: #ffffff;">
                     Оптико-механічний фаховий коледж
                 </a>
             </p>
-
             <p>Київ, Україна</p>
-
         </div>
-
         <div class="profile-info">
             <h1>Про мене:</h1>
-            <p>Досвід роботи: немає</p>
-            <p>Cфера: ****</p>
-            <p>Досягнення: ****</p>
+            <p>Досвід роботи: 1 рік</p>
+            <p>Cфера: IT</p>
+            <p>Досягнення: Спроектовано та створено проект для курсової роботи</p>
         </div>
-
         <div class="experience-section">
             <h3>Досвід роботи:</h3>
             <ul>
                 <li class="experience-item">
-                    <div class="item-subtitle">Період роботи: Січень 2020 - Теперішній час</div>
-                    <div class="item-title">Назва компанії 1</div>
-                    <div class="item-description">Основні досягнення</div>
-                    <div class="item-description">Основні обов'язки і технології, з якими доводилося працювати</div>
+                    <div class="item-subtitle">Період роботи: Не вказано</div>
+                    <div class="item-title">Назва компанії: Не вказано</div>
+                    <div class="item-description">Основні досягнення: Не вказано</div>
+                    <div class="item-description">Основні обов'язки і технології, з якими доводилося працювати: Не вказано</div>
                 </li>
             </ul>
         </div>
-
         <div class="nw__box">
             <div class="nw__box-header">
                 <div class="nw___box-header-title">
@@ -78,12 +80,73 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Завдання 1</td>
+                                    <td>№3 «Базові типи даних та операції. Part 1»</td>
                                     <td>5</td>
                                 </tr>
                                 <tr>
-                                    <td>Завдання 2</td>
-                                    <td>4</td>
+                                    <td>№4 «Базові типи даних та операції. Part 2»</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>№5 «Цикли»</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>№6 «Функції»</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>№7 «Колекції та структури даних. Part 1»</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>№8 «Колекції та структури даних. Part 2»</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>№10 «Рекурсія»</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>№11 «Помилки та винятки»</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>№12 «Декоратори і менеджери контексту»</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>№13 «Файли»</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>№15 «Регулярні вирази (RegEx) в Python»</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>№16 «Багатопотокове програмування»</td>
+                                    <td>5</td>
+                                </tr>
+
+                                <tr>
+                                    <td>№19 «ООП на прикладах в Python: класи і робота з ними»</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>№21 «Створення бази даних»</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>№22 «Робота з базами даних. Part 1»</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>№23 «Робота з базами даних. Part 2»</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>№26 «Базова робота з HTML/CSS»</td>
+                                    <td>-</td>
                                 </tr>
                             <!-- Додайте решту рядків для інших завдань та оцінок -->
                             </tbody>
@@ -92,7 +155,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 </html>
