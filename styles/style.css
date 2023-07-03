@@ -252,7 +252,6 @@ body {
   }
 
   .home-button {
-    margin: 0;
     width: 100%;
     border: none;
     background: none;
@@ -264,6 +263,7 @@ body {
     width: 100%;
     border: none;
     background: none;
+    object-fit: cover;
     margin-left: 25px;
     margin-right: -71px;
   }
