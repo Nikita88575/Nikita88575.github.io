@@ -1,166 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Мій профіль</title>
-    <script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-auto-add-css="false"></script>
-    <link href="https://example.com/fontawesome/v6.4.0/css/svg-with-js.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <div class="global-nav">
-        <div class="dropdown">
-            <button class="dropbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="drop-btn-clr">
-                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                </svg>
-            </button>
-            <div class="dropdown-content">
-              <a href="my_projects.html">Мої проекти</a>
-            </div>
-        </div>
-        <div class="headerContainer">
-            <div class="logo-container">
-                <img class="logo" src="logotypes/logo.png">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="profile-background">
-            <img class="profile-background-photo" src="photos/butterfly.png" alt="Задній план">
-        </div>
-        <div class="profile-header">
-            <img class="profile-picture" src="photos/test.jpg" alt="Ваше фото">
-            <h1 class="username">
-                <a href="https://github.com/Nikita88575" style="color: #ffffff;">
-                    Нікіта Вовк
-                </a>
-            </h1>
-            <p>
-                Студент(ка) в уч. закладі
-                <a href="https://omc.univ.kiev.ua/" style="color: #ffffff;">
-                    Оптико-механічний фаховий коледж
-                </a>
-            </p>
-            <p>Київ, Україна</p>
-            <button id="addFriendBtn" onclick="addFriend()">Додати в друзі</button>
-            <button id="sendMessageBtn" onclick="sendMessage()">Написати повідомлення</button>
-            <button id="jobOfferBtn" onclick="jobOffer()">Запропонувати роботу</button>
-            <div id="friendCount">Кількість друзів: <span id="count">0</span></div>
-        </div>
-        <div class="profile-info">
-            <h1>Про мене:</h1>
-            <p>Досвід роботи: 1 рік</p>
-            <p>Cфера: IT</p>
-            <p>Досягнення: Спроектовано та створено проект для курсової роботи</p>
-        </div>
-        <div class="experience-section">
-            <h3>Досвід роботи:</h3>
-            <ul>
-                <li class="experience-item">
-                    <div class="item-subtitle">Період роботи: Не вказано</div>
-                    <div class="item-title">Назва компанії: Не вказано</div>
-                    <div class="item-description">Основні досягнення: Не вказано</div>
-                    <div class="item-description">Основні обов'язки і технології, з якими доводилося працювати: Не вказано</div>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="static/styles/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="static/styles/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>Portfolio</title>
+  </head>
+
+<body style="background-color: black;">
+    <nav class="global-nav" role="navigation">
+        <div class="nav-wrapper container">
+
+            <a id="logo-container" href="#" class="brand-logo">
+                <img class="logo" src="static/images/logo.png">
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="my_projects.html">My projects</a>
                 </li>
             </ul>
-        </div>
-        <div class="nw__box">
-            <div class="nw__box-header">
-                <div class="nw___box-header-title">
-                    Мій прогрес
-                </div>
-            </div>
-            <div class="nw__box-content">
-                <div class="tab-pane">
-                    <div class="full-statistic">
-                        <h3>Список виконаних домашніх завдань:</h3>
-                        <button id="submitHomeworkBtn" onclick="submitHomework()">Здати ДЗ</button>
-                        <table id="done_hw" class="table">
-                            <thead>
-                                <tr>
-                                    <th>Домашнє завдання</th>
-                                    <th>Оцінка</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>№3 «Базові типи даних та операції. Part 1»</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>№4 «Базові типи даних та операції. Part 2»</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>№5 «Цикли»</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>№6 «Функції»</td>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <td>№7 «Колекції та структури даних. Part 1»</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>№8 «Колекції та структури даних. Part 2»</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>№10 «Рекурсія»</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>№11 «Помилки та винятки»</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr>
-                                    <td>№12 «Декоратори і менеджери контексту»</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>№13 «Файли»</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>№15 «Регулярні вирази (RegEx) в Python»</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>№16 «Багатопотокове програмування»</td>
-                                    <td>5</td>
-                                </tr>
 
-                                <tr>
-                                    <td>№19 «ООП на прикладах в Python: класи і робота з ними»</td>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <td>№21 «Створення бази даних»</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>№22 «Робота з базами даних. Part 1»</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr>
-                                    <td>№23 «Робота з базами даних. Part 2»</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr>
-                                    <td>№26 «Базова робота з HTML/CSS»</td>
-                                    <td>-</td>
-                                </tr>
-                            <!-- Додайте решту рядків для інших завдань та оцінок -->
-                            </tbody>
-                        </table>
+            <ul id="nav-mobile" class="sidenav">
+                <li>
+                    <a href="my_projects.html" style="color: #ffffff;">My projects</a>
+                </li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 25px;">
+        <div id="index-banner" class="parallax-container">
+          <div class="section">
+            <div class="container">
+              <br><br>
+                  <h1 class="header center deep-purple-text text-lighten-5">Python Developer</h1>
+                  <div class="row center">
+                    <h5 class="header col s12 deep-purple-text text-lighten-5">Python developer with 1.5 years of experience</h5>
+                  </div>
+                  <div class="row center">
+                    <a href="#skills" class="btn skills-btn waves-effect go-to-skills" style="background-color: #6a1b9a;">Skills</a>
+                    <a href="#about-me" class="btn contacts-btn waves-effect go-to-about-me" style="background-color: #4a148c;">About Me</a>
+                    <a href="my_projects.html" class="btn project-btn waves-effect"  style="background-color: #2e1f46;">Projects</a>
+                    <br><br>
+                  </div>
+            </div>
+          </div>
+          <div class="parallax"><img src="static/images/IMG_6599.JPG" style="transform: translate3d(-50%, 292.217px, 0px); opacity: 1; filter: blur(5px);"></div>
+        </div>
+
+    
+        <div class="container">
+            <div class="section">
+        
+                <h1 class="header center deep-purple-text text-lighten-5" id="skills">Skills</h1>
+                <div class="center">
+                    <i class="material-icons large deep-purple-text text-lighten-5">assignment</i>
+                </div>
+                
+              <!--   Icon Section   -->
+                <div class="row deep-purple-text text-lighten-5">
+
+                    <div class="col s12 m7 info-block">
+                        <h5>
+                            <ul class="skills-list deep-purple-text text-lighten-5">
+                                <li>Python</li>
+                                <li>Django / Django Rest Framework</li>
+                                <li>Flask</li>
+                                <li>SQL / SQLite / MySQL / PostgreSQL</li>
+                                <li>ORM</li>
+                                <li>OOP</li>
+                                <li>HTML / CSS / JavaScript</li>
+                                <li>JSON</li>
+                            </ul>
+                        </h5>
                     </div>
+                    
+                    <div class="col s12 m5 info-block">
+                        <h5>
+                            <ul class="skills-list deep-purple-text text-lighten-5">
+                                <li>Linux (Debian based)</li>
+                                <li>Heroku</li>
+                                <li>Aiohttp</li>
+                                <li>NodeJS</li>
+                                <li>Docker / Docker Compose </li>
+                                <li>Pandas</li>
+                                <li>BeautifulSoup4</li>
+                                <li>Nginx</li>
+                            </ul>
+                        </h5>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-    </div>
-    <script src="scripts/script.js"></script>
+    
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h1 class="header col s12 deep-purple-text text-lighten-5">Ready to discover new technologies and acquaintances</h1>
+                </div>
+              </div>
+            </div>
+            <div class="parallax">
+                <img src="static/images/warrior.jpg" style="opacity: 1; transform: translate3d(-50%, 191.157px, 0px); filter: blur(5px);">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+        
+              <div class="row">
+                <div class="col s12">
+                  <h1 class="header center deep-purple-text text-lighten-5" id="about-me">About Me</h4>
+                      <h4 class="header deep-purple-text text-lighten-5">
+                        I looking for Python Developer position. I have experience in creating programs and web applications in Python using frameworks such as Django. 
+                        In the development of my projects I used Flask, Aiogram, SQLAlchemy, SQLite, PostgreSQL, TKinter, pandas, BeatifulSoup.
+                        During the course by <a class="deep-purple-text text-lighten-5" href="https://robotdreams.cc/" target="_blank">robot_dreams</a> 
+                        I learned to work with GitHub, Flask, Django, Django REST Framework, HTML, CSS, Docker. I really want to find my first job to gain more experience and also work in a cool team.
+                      </h4>                  
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <div class="parallax-container valign-wrapper" style="margin-bottom: 25px;">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h1 class="deep-purple-text text-lighten-5">
+                    Arts by <a class="deep-purple-text text-lighten-5" href="https://www.artstation.com/guweiz" target="_blank">Z.W. Gu</a>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="parallax">
+                <img src="static/images/z-w-gu-trains2.jpg" style="opacity: 1; transform: translate3d(-50%, 318.016px, 0px); filter: blur(5px);">
+            </div>
+        </div>
+      </div>
+
+      <footer class="page-footer teal">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="deep-purple-text text-lighten-5">My Bio</h5>
+              <p class="deep-purple-text text-lighten-5">
+                Hello, my name is Nikita and I am a Python Developer. I came to developing web applications after switching to Linux as my main OS. 
+                I was very interested in web development, from the back-end to the front-end. I am currently actively looking for my first job as a 
+                Python Developer and hope to finally get an offer and join a team of experienced developers to improve my skills.
+              </p>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="deep-purple-text text-lighten-5">Contacts</h5>
+              <ul>
+                <li>
+                  <a class="deep-purple-text text-lighten-5" href="https://github.com/Nikita88575" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a class="deep-purple-text text-lighten-5" href="https://www.linkedin.com/in/nikitavovk/?locale=en_US" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                  <a class="deep-purple-text text-lighten-5" href="https://t.me/Nikita_sfteng" target="_blank">Telegram</a>
+                </li>
+                <li>
+                  <a class="deep-purple-text text-lighten-5" href="https://www.codewars.com/users/Nikita88575" target="_blank">Codewars</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+          </div>
+        </div>
+      </footer>
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="static/js/materialize.js"></script>
+    <script src="static/js/init.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html>
