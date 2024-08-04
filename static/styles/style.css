@@ -30,7 +30,6 @@ nav .brand-logo {
   height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  backdrop-filter: blur(5px);
   display: block;
 }
 
